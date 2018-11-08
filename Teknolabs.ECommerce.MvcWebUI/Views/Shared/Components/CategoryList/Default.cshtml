@@ -1,0 +1,9 @@
+﻿@model Teknolabs.ECommerce.MvcWebUI.Models.CategoryListViewModel
+
+<div class="list-group">
+    @foreach (var category in Model.Categories)
+    {
+        var css = (Model.CurrentCategory == category.CategoryId) ? "list-group-item active" : "list-group-item";
+        <a href="/product/index?categoryId=@category.CategoryId" class="@css">@category.CategoryName</a>
+    }
+</div>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teknolabs.Core", "Teknolabs.Core\Teknolabs.Core.csproj", "{FC79BB19-DEBC-4DCD-B31E-30BAB757BE3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teknolabs.ECommerce.Entities", "Teknolabs.ECommerce.Entities\Teknolabs.ECommerce.Entities.csproj", "{A1F4A376-F5BD-4BDF-896D-F80A0CF1EB25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teknolabs.ECommerce.DataAccess", "Teknolabs.ECommerce.DataAccess\Teknolabs.ECommerce.DataAccess.csproj", "{170951AD-A7BD-40EB-9CB1-3B4BDF646D55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teknolabs.ECommerce.Business", "Teknolabs.ECommerce.Business\Teknolabs.ECommerce.Business.csproj", "{38BC614D-F38E-4F4D-8AFB-92FB905A6947}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teknolabs.ECommerce.MvcWebUI", "Teknolabs.ECommerce.MvcWebUI\Teknolabs.ECommerce.MvcWebUI.csproj", "{1AB715E9-159A-4013-A553-039A6E180A28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC79BB19-DEBC-4DCD-B31E-30BAB757BE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC79BB19-DEBC-4DCD-B31E-30BAB757BE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC79BB19-DEBC-4DCD-B31E-30BAB757BE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC79BB19-DEBC-4DCD-B31E-30BAB757BE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F4A376-F5BD-4BDF-896D-F80A0CF1EB25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F4A376-F5BD-4BDF-896D-F80A0CF1EB25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F4A376-F5BD-4BDF-896D-F80A0CF1EB25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F4A376-F5BD-4BDF-896D-F80A0CF1EB25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{170951AD-A7BD-40EB-9CB1-3B4BDF646D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170951AD-A7BD-40EB-9CB1-3B4BDF646D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170951AD-A7BD-40EB-9CB1-3B4BDF646D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170951AD-A7BD-40EB-9CB1-3B4BDF646D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38BC614D-F38E-4F4D-8AFB-92FB905A6947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BC614D-F38E-4F4D-8AFB-92FB905A6947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BC614D-F38E-4F4D-8AFB-92FB905A6947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BC614D-F38E-4F4D-8AFB-92FB905A6947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB715E9-159A-4013-A553-039A6E180A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB715E9-159A-4013-A553-039A6E180A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB715E9-159A-4013-A553-039A6E180A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB715E9-159A-4013-A553-039A6E180A28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {963ED2D3-3133-4C52-999B-A1AF9EDC76EC}
+	EndGlobalSection
+EndGlobal

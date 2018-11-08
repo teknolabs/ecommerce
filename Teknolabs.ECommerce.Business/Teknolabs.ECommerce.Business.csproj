@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Teknolabs.Core\Teknolabs.Core.csproj" />
+    <ProjectReference Include="..\Teknolabs.ECommerce.DataAccess\Teknolabs.ECommerce.DataAccess.csproj" />
+    <ProjectReference Include="..\Teknolabs.ECommerce.Entities\Teknolabs.ECommerce.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
