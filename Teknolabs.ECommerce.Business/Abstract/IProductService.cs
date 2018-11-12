@@ -11,5 +11,6 @@ namespace Teknolabs.ECommerce.Business.Abstract
         void Add(Product product);
         void Update(Product product);
         void Delete(Product productId);
+        Product GetById(int productId);
     }
 }

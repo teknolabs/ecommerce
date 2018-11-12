@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +7,7 @@ using Teknolabs.ECommerce.Business.Concrete;
 using Teknolabs.ECommerce.DataAccess.Abstract;
 using Teknolabs.ECommerce.DataAccess.Concrete.EntityFramework;
 using Teknolabs.ECommerce.MvcWebUI.Middlewares;
+using Teknolabs.ECommerce.MvcWebUI.Services;
 
 namespace Teknolabs.ECommerce.MvcWebUI
 {
@@ -24,7 +21,12 @@ namespace Teknolabs.ECommerce.MvcWebUI
             services.AddScoped<IProductDal, EfProductDal>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
-            services.AddMvc(); 
+            services.AddSingleton<ICartSessionService, CartSessionService>();
+            services.AddSingleton<ICartService, CartService>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSession();
+            services.AddDistributedMemoryCache();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,7 +39,7 @@ namespace Teknolabs.ECommerce.MvcWebUI
 
             app.UseFileServer();
             app.UseNodeModules(env.ContentRootPath);
-
+            app.UseSession();
             app.UseMvcWithDefaultRoute();
 
 
